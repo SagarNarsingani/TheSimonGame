@@ -17,6 +17,16 @@ $(document).keypress(
     }
 );
 
+$(".start").click(
+    function(){
+        if(!started){
+          $("h1").text("Level " + level);
+          nextSequence();
+          started = true;
+        }
+    }
+)
+
 $(".btn").click(
     function(){
        
@@ -94,6 +104,6 @@ function startOver(){
     started = false;
     gamePattern = [];
     level = 0;
-    
+
 }
 
