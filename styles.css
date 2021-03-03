@@ -74,12 +74,6 @@ body {
     color: #FEF2BF;
   }
 
-  .container {
-    display: block;
-    width: 100%;
-    margin: auto;
-  }
-
   #level-title-sm{
     visibility: visible;
     font-family: 'Press Start 2P', cursive;
@@ -92,6 +86,14 @@ body {
 
   #level-title{
     visibility: hidden;
+  }
+}
+
+@media (max-width : 1028px){
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
   }
 }
 
