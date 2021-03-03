@@ -1,9 +1,6 @@
-*{
-  box-sizing: border-box;
-}
-
 body {
   text-align: center;
+  height: 100vh;
   background-color: #011F3F;
 }
 
@@ -11,7 +8,12 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
+  margin-top: 3%;
   color: #FEF2BF;
+}
+
+#level-title-sm{
+  visibility: hidden;
 }
 
 .blue {
@@ -20,6 +22,7 @@ body {
 
 .btn {
   margin: 25px;
+  margin-top: 7px;
   display: inline-block;
   height: 200px;
   width: 200px;
@@ -52,8 +55,44 @@ body {
   background-color: red;
 }
 
+.start{
+  visibility: hidden;
+}
+
 .yellow {
   background-color: yellow;
+}
+
+@media (max-width: 768px) {
+   
+  .start{
+    visibility: visible;
+    height: 40px; width: 100px;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    border: 0px;
+    color: #FEF2BF;
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  #level-title-sm{
+    visibility: visible;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    margin-top: 3%;
+    line-height: 1.5;
+    color: #FEF2BF;
+  }
+
+  #level-title{
+    visibility: hidden;
+  }
 }
 
 
