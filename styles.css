@@ -87,6 +87,16 @@ body {
   #level-title{
     visibility: hidden;
   }
+
+  .btn {
+    margin: 15px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 10px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+  }
 }
 
 @media (max-width : 1028px){
